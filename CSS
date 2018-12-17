@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.opener {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    background-image: url('imgs/opener.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#text {
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    animation: pop-in 0.3s linear 1;
+    animation-name: pop-in;
+    animation-duration: 6s;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+}
+
+.invisible {
+  transition: opacity 1.5s ease;
+  opacity: 0.0;
+}
+
+.visible {
+  transition: all 1.5s ease;
+  opacity: 1.0;
+}
+
+.invisible ul {
+    transform: scale(0.3);
+    transition: all 1.5s;
+}
+
+.visible ul {
+   transform: scale(1);
+    transition: all 1.5s;
+}
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    margin-left: 20px;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-inner {
+  border-radius: 25px;
+  background: linear-gradient(#7bf7b3, #7bf7e2);
+  padding: 50px; 
+  width: 1000px;
+  font-size: 25px;
+  color: #1a3a49;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: auto;
+
+}
+
+#swimming {
+	background-image: url('imgs/illo1.png');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#plant {
+    background-image: url('imgs/illo2.png');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#obstacle {
+    background-image: url('imgs/illo3.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#about {
+    background-image: url('imgs/illo4.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#blurb1 {
+    background-image: url('imgs/illo1.png');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#blurb2 {
+    background-image: url('imgs/illo2.png');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#blurb3 {
+    background-image: url('imgs/illo3.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#blurb4 {
+    background-image: url('imgs/illo4.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(#7bf7b3, #7bf7e2);
+}
+
+@media only screen and (max-width: 800px) {
+    .section-inner {
+        width: 80%;
+        margin: 0.5rem 0 0.5rem 0.85rem;
+    }
+}
+
+@keyframes pop-in {
+    from {transform: scale(0.5);}
+    to {transform: scale(1);}
+}
